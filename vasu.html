@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My-portfolio-Vasukimari.M</title>
+        <style>
+            body{
+                font-family: arival,sans-serif;
+                margin:0;
+                padding:0;
+                background-color: pink;
+            }
+            header{
+                background: pink;
+                color:white;
+                text-align: center;
+                padding: 2rem 0;
+                position:relative;
+            }
+            .header-content h1{
+                font-size: 2.5rem;
+            }
+            .profile-picture{
+                width: 100px;
+                height:100px;
+                border-radius: 75%;
+                object-fit:cover;
+                position:absolute;
+                top:75px;
+            }
+            nav{
+                background-color: pink;
+                color:white;
+                text-align:center;            
+            }
+            nav ul{
+                list-style-type:none;
+                padding:10px;
+            }
+            nav ul li{
+                display:inline;
+                margin:0.20px;
+            }
+            nav ul li{
+                text-decoration:none;
+                color:pink
+            }
+            .section-content{
+                background-color: pink;
+                padding:2rem;
+                margin:1rem;
+                border-radius:20px;
+                box-shadow:0 0 10px rgb(0,0,0,0.1);
+            }
+            .download-button{
+                background-color: pink;
+                color:white;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display:inline-block;
+                margin-top: 10px;
+            }
+            .download-button:hover{
+                background-color: pink;
+            }
+            footer{
+                text-align: center;
+                padding: 1rem 0;
+                background-color: pink;
+                color: white;
+            }
+            ul{
+                list-style-type: lower-roman;
+                padding-left: 20px;
+            }
+      </style>
+    </head>
+    <body>
+        <header>
+        <div-class:"header-content">
+            <img src="Vasukimari M.jpg" alt="your profile picture" class="profile-picture">
+            <h1>Vasukimari M</h1>
+            <p>student of bca department</p>
+        </div>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#family">Family</a></li>
+            <li><a href="#resume">resume</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <div class="="section-content">
+            <h2>About myself</h2>
+        <p>hello guys!Thanks for visiting my page and This is vasuki here,i am student of BCA</p>
+    </div>
+    </section>
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Ambai Arts college-BCA-Ambasamudram</p>
+            <h1>my marks</h1>
+            <table border="2">
+                <tr>
+                    <th>My name</th>
+                    <th>institute</th>
+                    <th>city</th>
+                    <th>standard</th>
+                </tr>
+                <tr>
+                    <td>Vasukimari</td>
+                    <td>oxford nursary&primary school</td>
+                    <td>pallakal pothukudi</td>
+                    <td>lkg&ukg</td>
+                </tr>
+                <tr>
+                    <td>Vasukimari</td>
+                    <td>panchayat union middle school</td>
+                    <td>pallakal pothukudi</td>
+                    <td>1st to 8th standard</td>
+                </tr>
+                <tr>
+                    <td>Vasukimari</td>
+                    <td>govt hr sec school</td>
+                    <td>pallakal pothukudi</td>
+                    <td>9th to 12th standard</td>
+                </tr>
+                <tr>
+                    <td>Vasukimari</td>
+                    <td>Ambai arts college</td>
+                    <td>Ambasamudram</td>
+                    <td>BCA</td>
+                </tr>
+            </table>
+        </div>
+        </section>
+        <section id="skills">
+            <div class="section-content">
+                <h2>skills</h2>
+                <ul>
+                    <li>c programming</li>
+                    <li>Aari embraiding</li>
+                    <li>scope certificate</li>
+                    <li>composition writting</li>
+                </ul>
+            </div>
+        </section>
+        <section id="family">
+            <div class="section-content">
+                <h2>Family</h2>
+                <ul>
+                    <li>Father:Marimuthu.K-bakeryman/li>
+                        <li>mother:Muthuselvi.M-housewife</li>
+                        <li>brother:Radhakrishnan.M-studying 11th standard</li>
+                </ul>
+            </div>
+        </section>
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                    <h2>My resume</h2>
+                    <a href="my resume">my resume</a>
+                </div>
+            </center>
+        </section>
+            <script>
+                document.querySelectorAll('a[href="#"]').foreach(anchor=>{
+                    anchor.addeventlistener('click',function(e){
+                        a.preventdefault();
+                        const targetid=this.getattribute('href').substring(1);
+                        const targetElement=document.getElementById(targetid);
+                        if(targetelement){
+                            wirdaw.scrollTo({
+                                top:targetelement.offsetTop,
+                                begaiviour: 'smooth'
+                            });
+                        }
+                    });
+                });
+            </script>
+            </body>
+            </html>
